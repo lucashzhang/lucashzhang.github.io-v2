@@ -2,9 +2,7 @@
   import { onMount } from "svelte";
 
   onMount(() => {
-    fetch('/.netlify/functions/getWork').then(async data => {
-      console.log(await data.json())
-    })
+    fetch('/api/work').then(data => data.json()).then(json => console.log(json));
   });
 </script>
 
