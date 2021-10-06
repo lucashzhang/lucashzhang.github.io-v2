@@ -1,5 +1,11 @@
 <script>
-  const name = "Lucas";
+  import { onMount } from "svelte";
+
+  onMount(() => {
+    fetch("/.netlify/functions/getProjects").then(async (data) => {
+      console.log(await data.json());
+    });
+  });
 </script>
 
 <section>
