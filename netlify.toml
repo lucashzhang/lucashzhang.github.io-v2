@@ -1,10 +1,18 @@
 [build]
   command = "npm run build"
   publish = "build"
+  functions = "functions"
  
 [dev]
  command = "svelte-kit dev"
+
+[build.environment]
+  NODE_VERSION = "14.16.0"
  
 [functions]
   directory = "netlify/functions"
-  node_bundler = "esbuild"
+
+[[redirects]]
+  from = "/api/*"
+  to = "/netlify/functions/:splat"
+  status = 200

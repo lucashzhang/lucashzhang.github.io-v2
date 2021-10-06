@@ -1,4 +1,11 @@
 <script>
+  import { onMount } from "svelte";
+
+  onMount(() => {
+    fetch('/.netlify/functions/getWork').then(async data => {
+      console.log(await data.json())
+    })
+  });
 </script>
 
 <section>
