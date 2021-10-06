@@ -1,5 +1,9 @@
 <script>
-  const name = "Lucas";
+  import { onMount } from "svelte";
+
+  onMount(() => {
+    fetch('/api/projects').then(data => data.json()).then(json => console.log(json));
+  });
 </script>
 
 <section>
