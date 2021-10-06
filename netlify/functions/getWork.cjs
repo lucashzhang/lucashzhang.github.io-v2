@@ -8,8 +8,12 @@ function fromNotionObject(notionPage) {
 }
 
 exports.handler = async () => {
-  const { NOTION_TOKEN, NOTION_WORK_DATABASE, NOTION_WORK_START, NOTION_WORK_END } =
-    process.env;
+  const {
+    NOTION_TOKEN,
+    NOTION_WORK_DATABASE,
+    NOTION_WORK_START,
+    NOTION_WORK_END,
+  } = process.env;
   const notion = new Client({
     auth: NOTION_TOKEN,
   });
@@ -38,9 +42,7 @@ exports.handler = async () => {
   } catch (error) {
     return {
       statusCode: 500,
-      body: JSON.stringify({ error: 'Failed to fetch work from notion' })
-    }
+      body: JSON.stringify({ error: "Failed to fetch work from notion" }),
+    };
   }
-
-  
 };
