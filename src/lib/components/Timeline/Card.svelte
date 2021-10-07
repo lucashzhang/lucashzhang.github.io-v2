@@ -25,7 +25,7 @@
     position: relative;
     display: flex;
     align-items: center;
-    height: 22rem;
+    height: 20rem;
   }
 
   .Card-Content {
@@ -37,8 +37,8 @@
 
   .Card-Thumbnail {
     margin-left: auto;
-    max-height: 22rem;
-    max-width: 75%;
+    max-height: 18rem;
+    max-width: 70%;
     transition: scale ease 0.5s;
   }
 

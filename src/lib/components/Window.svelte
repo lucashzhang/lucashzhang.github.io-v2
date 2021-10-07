@@ -43,6 +43,6 @@
   }
 
   .Window-Content {
-    padding: 1rem;
+    padding: 0.75rem;
   }
 </style>
