@@ -47,7 +47,6 @@
 
   .stable-container {
     width: 90%;
-    text-align: left;
   }
 
   .scrollable {

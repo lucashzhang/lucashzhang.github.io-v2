@@ -3,11 +3,9 @@
     const res = await fetch("/api/notion");
 
     if (res.ok) {
-      const { work, projects } = await res.json();
       return {
         props: {
-          work: work,
-          projects: projects,
+          ...await res.json()
         },
       };
     }
