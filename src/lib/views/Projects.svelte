@@ -126,7 +126,6 @@
 
 <style>
   section {
-    background-color: var(--cl-background);
     text-align: center;
     display: flex;
     flex-direction: row-reverse;

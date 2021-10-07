@@ -1,0 +1,28 @@
+:root {
+  --cl-primary: #1dc0c0;
+  --cl-secondary: #c01dc0;
+  --cl-background: #333333;
+  --cl-background-light: #363636;
+  --cl-text: white;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: var(--cl-background);
+  background-image: url("background.svg");
+}
+
+section {
+  padding: 1rem max(calc(50vw - 800px), 1rem);
+}
+
+main {
+  background-color: var(--cl-background-light);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
