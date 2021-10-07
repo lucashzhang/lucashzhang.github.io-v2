@@ -1,15 +1,19 @@
 <script context="module">
   export async function load({ fetch }) {
-    const [work, projects] = await Promise.all([
-      fetch("/api/work"),
-      fetch("/api/projects"),
-    ]);
+    const res = await fetch("/api/notion");
 
+    if (res.ok) {
+      const { work, projects } = await res.json();
+      return {
+        props: {
+          work: work,
+          projects: projects,
+        },
+      };
+    }
     return {
-      props: {
-        work: work.ok ? await work.json() : { data: [] },
-        projects: projects.ok ? await projects.json() : { data: [] },
-      },
+      status: res.status,
+      error: new Error(`Could not load notion database`),
     };
   }
 </script>
