@@ -1,5 +1,6 @@
 <script>
   import Timeline from "$lib/components/Timeline/index.svelte";
+  import Window from "$lib/components/Window.svelte";
   export let work;
 
   console.log(work);
@@ -8,8 +9,18 @@
 <section>
   <div class="stable">
     <div class="stable-container">
-      <h1>Where I've Worked</h1>
-      <hr />
+      <Window color="primary">
+        <h1>My Experiences</h1>
+        <hr />
+        <p>
+          Right now, I'm a computer science major at UNC Chapel Hill. But
+          outside of schoolwork, I spend much of my time interning at places
+          like SAS and Duke University. I also taking an active role in my
+          Computer Science Department by doing things such as Directing the
+          Carolina Data Challenge Hackathon and serving on the development team
+          of Computer Science for Social Good.
+        </p>
+      </Window>
     </div>
   </div>
   <div class="scrollable">
@@ -27,22 +38,21 @@
     position: sticky;
     top: 0px;
     max-height: 100vh;
-    width: 50%;
+    width: 40%;
     display: flex;
     align-items: center;
-    justify-content: center;
     padding: 1rem;
     z-index: 10;
   }
 
   .stable-container {
-    width: 75%;
+    width: 90%;
     text-align: left;
   }
 
   .scrollable {
     z-index: 100;
-    width: 50%;
+    width: 60%;
     padding: 1rem;
   }
 </style>

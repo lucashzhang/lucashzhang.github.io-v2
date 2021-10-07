@@ -1,8 +1,9 @@
 <script>
+  export let color = "";
 </script>
 
-<div class="Window">
-  <div class="Window-Bar">
+<div class={`Window ${color}`}>
+  <div class={`Window-Bar ${color}`}>
     <div class="Window-Dot" />
     <div class="Window-Dot" />
   </div>
@@ -40,9 +41,18 @@
   .Window-Dot:last-child {
     border-color: var(--cl-secondary);
     background-color: var(--cl-secondary);
+    margin-right: 4px;
   }
 
   .Window-Content {
     padding: 0.75rem;
+  }
+
+  .primary {
+    border-color: var(--cl-primary);
+  }
+
+  .secondary {
+    border-color: var(--cl-secondary);
   }
 </style>
