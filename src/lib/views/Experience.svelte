@@ -1,9 +1,7 @@
 <script>
-  import { onMount } from "svelte";
+  export let work;
 
-  onMount(() => {
-    fetch('/api/work').then(data => data.json()).then(json => console.log(json));
-  });
+  console.log(work)
 </script>
 
 <section>
