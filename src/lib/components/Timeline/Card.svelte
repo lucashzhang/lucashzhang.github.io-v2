@@ -1,5 +1,6 @@
 <script>
   import Window from "$lib/components/Window.svelte";
+  import Tag from "$lib/components/Timeline/Tag.svelte";
   export let data;
   export let direction = "right";
 
@@ -14,6 +15,7 @@
   $: thumbnail = data?.Thumbnail?.files[0]?.file?.url || "";
   $: link = data?.Link?.url || "";
   $: date = generateDate(data?.Date?.date);
+  $: technologies = data?.Technologies.multi_select || [];
 </script>
 
 <div class="Card">
@@ -28,7 +30,13 @@
       <h3>{title}</h3>
       <p>{body}</p>
     </Window>
-    <div class={`Card-Extra ${direction}`}>Tags Placeholder</div>
+    <div class={`Card-Extra ${direction}`}>
+      {#each technologies as tech (tech.id)}
+        <Tag color={tech.color}>
+          {tech.name}
+        </Tag>
+      {/each}
+    </div>
   </div>
 </div>
 
@@ -102,6 +110,5 @@
 
   .Card-Extra.left {
     justify-content: end;
-
   }
 </style>
