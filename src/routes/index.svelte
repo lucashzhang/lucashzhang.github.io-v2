@@ -23,8 +23,8 @@
   import Experience from "$lib/views/Experience.svelte";
   import Projects from "$lib/views/Projects.svelte";
 
-  export let work;
-  export let projects;
+  export let work = [];
+  export let projects = [];
 </script>
 
 <About />

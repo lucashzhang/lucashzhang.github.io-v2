@@ -2,7 +2,7 @@
   --cl-primary: #1dc0c0;
   --cl-secondary: #c01dc0;
   --cl-background: #333333;
-  --cl-background-light: #363636;
+  --cl-background-light: #393939;
   --cl-text: white;
 }
 
@@ -12,6 +12,11 @@ body {
   padding: 0;
   background-color: var(--cl-background);
   background-image: url("background.svg");
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  color: var(--cl-text);
+  text-align: left;
 }
 
 section {
@@ -19,10 +24,18 @@ section {
 }
 
 main {
-  background-color: var(--cl-background-light);
+  background-color: var(--cl-background);
 }
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+p {
+  margin: 0;
 }
