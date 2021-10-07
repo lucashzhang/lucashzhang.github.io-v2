@@ -19,7 +19,7 @@
     </div>
   </div>
   <div class="scrollable">
-    <Timeline items={projects} />
+    <Timeline items={projects} direction="left" />
   </div>
 </section>
 
@@ -33,7 +33,7 @@
     position: sticky;
     top: 0px;
     max-height: 100vh;
-    width: 40%;
+    width: 50%;
     display: flex;
     align-items: center;
     padding: 1rem;
@@ -41,13 +41,13 @@
   }
 
   .stable-container {
-    width: 90%;
+    width: 80%;
     margin-left: auto;
   }
 
   .scrollable {
     z-index: 100;
-    width: 60%;
+    width: 50%;
     padding: 1rem;
   }
 </style>

@@ -1,6 +1,7 @@
 <script>
   import Window from "$lib/components/Window.svelte";
   export let data;
+  export let direction = "right";
 
   function generateDate(date) {
     if (!date) return "";
@@ -16,18 +17,18 @@
 </script>
 
 <div class="Card">
-  <a class="Card-Thumbnail" href={link} target="_blank">
+  <a class={`Card-Thumbnail ${direction}`} href={link} target="_blank">
     <img src={thumbnail} alt={title || ""} />
   </a>
-  <div class="Card-Content">
-    <div class="Card-Extra">
+  <div class={`Card-Content ${direction}`}>
+    <div class={`Card-Extra ${direction}`}>
       {date}
     </div>
     <Window>
       <h3>{title}</h3>
       <p>{body}</p>
     </Window>
-    <div class="Card-Extra">Tags Placeholder</div>
+    <div class={`Card-Extra ${direction}`}>Tags Placeholder</div>
   </div>
 </div>
 
@@ -42,17 +43,32 @@
   }
 
   .Card-Content {
-    grid-column: 2 / 13;
     grid-row: 1;
     z-index: 100;
   }
 
   .Card-Thumbnail {
     transition: scale ease 0.25s;
-    grid-column: 8 / 21;
     grid-row: 1;
     z-index: 99;
+  }
+
+  .Card-Thumbnail.right {
+    grid-column: 8 / 21;
     margin-left: auto;
+  }
+
+  .Card-Content.right {
+    grid-column: 1 / 14;
+  }
+
+  .Card-Thumbnail.left {
+    grid-column: 1 / 14;
+    margin-left: auto;
+  }
+
+  .Card-Content.left {
+    grid-column: 8 / 21;
   }
 
   img {
@@ -78,5 +94,14 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+  }
+
+  .Card-Extra.right {
+    justify-content: start;
+  }
+
+  .Card-Extra.left {
+    justify-content: end;
+
   }
 </style>
