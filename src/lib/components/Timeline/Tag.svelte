@@ -2,7 +2,7 @@
   export let color;
 </script>
 
-<div class={`Tag ${color}`}>
+<div class={`Tag notion-${color}`}>
   <slot />
 </div>
 
@@ -11,45 +11,43 @@
     padding: 1px 2px;
     border-radius: 2px;
     margin: 0px 2px;
+    background-color: var(--cl-notion-tag, #505558);
   }
   /* Classes for Notion colors */
-  .default {
-    background-color: rgb(80,85,88);
+
+  .notion-gray {
+    --cl-notion-tag: #6F7376;
   }
 
-  .gray {
-    background-color: rgba(151,154,155,0.5);
+  .notion-brown {
+    --cl-notion-tag: #6D5F5A;
   }
 
-  .brown {
-    background-color: rgba(147,114,100,0.5);
+  .notion-orange {
+    --cl-notion-tag: #A3784A;
   }
 
-  .orange {
-    background-color: rgba(255,163,68,0.5);
+  .notion-yellow {
+    --cl-notion-tag: #A3944D;
   }
 
-  .yellow {
-    background-color: rgba(255,220,73,0.5);
+  .notion-green {
+    --cl-notion-tag: #4A7C75;
   }
 
-  .green {
-    background-color: rgba(77,171,154,0.5);
+  .notion-blue {
+    --cl-notion-tag: #4C748D;
   }
 
-  .blue {
-    background-color: rgba(82,156,202,0.5);
+  .notion-purple {
+    --cl-notion-tag: #705D94;
   }
 
-  .purple {
-    background-color: rgba(154,109,215,0.5);
+  .notion-pink {
+    --cl-notion-tag: #945179;
   }
 
-  .pink {
-    background-color: rgba(226,85,161,0.5);
-  }
-
-  .red {
-    background-color: rgba(255,115,105,0.5);
+  .notion-red {
+    --cl-notion-tag: #A3605D;
   }
 </style>

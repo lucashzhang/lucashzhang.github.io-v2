@@ -7,7 +7,7 @@
   function generateDate(date) {
     if (!date) return "";
     const { start = "", end = "" } = date;
-    return start + (end ? ` -> ${end}` : "");
+    return start + (end ? ` > ${end}` : "");
   }
 
   $: title = data?.Name?.title[0]?.plain_text || "";
@@ -72,7 +72,7 @@
 
   .Card-Thumbnail.left {
     grid-column: 1 / 14;
-    margin-left: auto;
+    margin-right: auto;
   }
 
   .Card-Content.left {
@@ -80,11 +80,10 @@
   }
 
   img {
-    width: 28rem;
     object-fit: cover;
     object-position: center;
     height: 16rem;
-    border-radius: 2px;
+    aspect-ratio: 16 / 9;
   }
 
   .Card-Thumbnail:hover {

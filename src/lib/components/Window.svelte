@@ -16,7 +16,6 @@
   .Window {
     border: 2px solid grey;
     background-color: var(--cl-background-light);
-    width: auto;
   }
 
   .Window-Bar {
