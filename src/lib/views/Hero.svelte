@@ -10,7 +10,7 @@
 <style>
   .Hero {
     text-align: center;
-    height: 100vh;
+    height: calc(100vh - 3rem);
   }
 
   h1 {
