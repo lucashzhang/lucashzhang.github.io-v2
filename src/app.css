@@ -1,7 +1,8 @@
 :root {
-  --cl-primary: #1dc0c0;
-  --cl-secondary: #c01dc0;
+  --cl-primary: #99ebff;
+  --cl-secondary: #ba6586;
   --cl-background: #333333;
+  /* --cl-background-light: #353946; */
   --cl-background-light: #393939;
   --cl-text: white;
 }
@@ -11,7 +12,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: var(--cl-background);
-  background-image: url("background.svg");
+  background-image: url("/background.svg");
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
