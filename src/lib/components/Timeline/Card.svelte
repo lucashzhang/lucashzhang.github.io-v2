@@ -56,7 +56,7 @@
   }
 
   .Card-Thumbnail {
-    transition: scale ease 0.25s;
+    transition: transform ease 0.25s;
     grid-row: 1;
     z-index: 99;
   }
@@ -88,7 +88,7 @@
 
   .Card-Thumbnail:hover {
     z-index: 101;
-    scale: 1.01;
+    transform: scale(1.01)
   }
 
   p {
