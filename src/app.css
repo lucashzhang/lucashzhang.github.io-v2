@@ -1,10 +1,11 @@
 :root {
-  --cl-primary: #99c9ff;
+  --cl-primary: #85bcfc;
   --cl-secondary: #ba6586;
   --cl-background: #333333;
   /* --cl-background-light: #353946; */
   --cl-background-light: #393939;
   --cl-text: white;
+  scroll-behavior: smooth;
 }
 
 body {
