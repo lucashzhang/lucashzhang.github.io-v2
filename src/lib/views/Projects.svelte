@@ -6,7 +6,7 @@
   console.log(projects);
 </script>
 
-<section>
+<section id="projects">
   <div class="stable">
     <div class="stable-container">
       <Window color="primary">

@@ -2,7 +2,7 @@
   import Window from "$lib/components/Window.svelte";
 </script>
 
-<section class="About">
+<section id="about">
   <img src="/Me.jpg" alt="Me" />
   <Window color="primary">
     <h1>About Me</h1>
@@ -19,7 +19,7 @@
 </section>
 
 <style>
-  .About {
+  section {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -28,7 +28,7 @@
 
   img {
     width: 20rem;
-    padding-right: 3rem;
+    margin-right: 3rem;
   }
 
   p {

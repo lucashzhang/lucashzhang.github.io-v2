@@ -6,7 +6,7 @@
   console.log(work);
 </script>
 
-<section>
+<section id="experience">
   <div class="stable">
     <div class="stable-container">
       <Window color="primary">

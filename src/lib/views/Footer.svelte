@@ -1,7 +1,7 @@
 <script>
 </script>
 
-<footer />
+<footer id="contact" />
 
 <style>
   footer {
