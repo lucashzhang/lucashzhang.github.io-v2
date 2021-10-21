@@ -20,7 +20,7 @@
 
 <div class="Card">
   <a class={`Card-Thumbnail ${direction}`} href={link} target="_blank">
-    <img src={thumbnail} alt={title || ""} />
+    <img src={thumbnail} alt={title || ""} loading="lazy" />
   </a>
   <div class={`Card-Content ${direction}`}>
     <div class={`Card-Extra ${direction}`}>

@@ -3,7 +3,7 @@
 </script>
 
 <section id="about">
-  <img src="/Me.jpg" alt="Me" />
+  <img src="/Me.jpg" alt="Me" loading="lazy" />
   <Window color="primary">
     <h1>About Me</h1>
     <hr />
