@@ -13,6 +13,7 @@
         d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"
       />
     </svg>
+    <span class="tooltip">Home</span>
   </a>
   <a href="#about" rel="tag">
     <svg
@@ -27,6 +28,7 @@
         clip-rule="evenodd"
       />
     </svg>
+    <span class="tooltip">About Me</span>
   </a>
   <a href="#experience" rel="tag">
     <svg
@@ -44,6 +46,7 @@
         d="M2 13.692V16a2 2 0 002 2h12a2 2 0 002-2v-2.308A24.974 24.974 0 0110 15c-2.796 0-5.487-.46-8-1.308z"
       />
     </svg>
+    <span class="tooltip">My Experiences</span>
   </a>
   <a href="#projects" rel="tag">
     <svg
@@ -58,6 +61,7 @@
         clip-rule="evenodd"
       />
     </svg>
+    <span class="tooltip">My Projects</span>
   </a>
   <a href="#contact" rel="tag">
     <svg
@@ -72,8 +76,12 @@
         clip-rule="evenodd"
       />
     </svg>
+    <span class="tooltip">Contact Me</span>
   </a>
-  <a href="https://drive.google.com/file/d/1kYoxdLcPnO5h7ehvS6RkL8_2aIfyihdu/view?usp=sharing" target="_blank">
+  <a
+    href="https://drive.google.com/file/d/1kYoxdLcPnO5h7ehvS6RkL8_2aIfyihdu/view?usp=sharing"
+    target="_blank"
+  >
     <svg
       xmlns="http://www.w3.org/2000/svg"
       class="h-5 w-5"
@@ -86,10 +94,12 @@
         clip-rule="evenodd"
       />
     </svg>
+    <span class="tooltip">My Resume</span>
   </a>
 </nav>
 
 <style>
+
   nav {
     background-color: var(--cl-primary);
     height: 3rem;
@@ -116,7 +126,27 @@
     padding: 0 0.25rem;
     margin: 0 0.25rem;
     border-radius: 4px;
+    position: relative;
   }
+
+  nav a .tooltip {
+    position: absolute;
+    color: var(--cl-text);
+    top: -1.75rem;
+    background-color: var(--cl-primary);
+    padding: 2px 4px;
+    font-size: small;
+    white-space: nowrap;
+    transition: all 0.25s;
+    opacity: 0;
+    border-radius: 2px;
+  }
+
+  nav a:hover .tooltip {
+    top: -2rem;
+    opacity: 1;
+  }
+
   nav a:hover {
     background-color: rgba(100, 100, 100, 0.25);
   }
