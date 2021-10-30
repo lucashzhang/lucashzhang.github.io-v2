@@ -2,7 +2,7 @@
 </script>
 
 <nav>
-  <a href="#hero">
+  <a href="#hero" rel="tag">
     <svg
       xmlns="http://www.w3.org/2000/svg"
       class="h-5 w-5"
@@ -14,7 +14,7 @@
       />
     </svg>
   </a>
-  <a href="#about">
+  <a href="#about" rel="tag">
     <svg
       xmlns="http://www.w3.org/2000/svg"
       class="h-5 w-5"
@@ -28,7 +28,7 @@
       />
     </svg>
   </a>
-  <a href="#experience">
+  <a href="#experience" rel="tag">
     <svg
       xmlns="http://www.w3.org/2000/svg"
       class="h-5 w-5"
@@ -45,7 +45,7 @@
       />
     </svg>
   </a>
-  <a href="#projects">
+  <a href="#projects" rel="tag">
     <svg
       xmlns="http://www.w3.org/2000/svg"
       class="h-5 w-5"
@@ -59,7 +59,7 @@
       />
     </svg>
   </a>
-  <a href="#contact">
+  <a href="#contact" rel="tag">
     <svg
       xmlns="http://www.w3.org/2000/svg"
       class="h-5 w-5"

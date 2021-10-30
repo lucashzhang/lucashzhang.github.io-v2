@@ -53,6 +53,7 @@
   .Card-Content {
     grid-row: 1;
     z-index: 100;
+    transition: filter ease 0.25s;
   }
 
   .Card-Thumbnail {
@@ -86,9 +87,13 @@
     aspect-ratio: 16 / 9;
   }
 
+  .Card-Thumbnail:hover + .Card-Content {
+    filter: blur(4px) opacity(0.5);
+  }
+
   .Card-Thumbnail:hover {
     z-index: 101;
-    transform: scale(1.01)
+    transform: scale(1.01);
   }
 
   p {
