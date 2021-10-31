@@ -2,8 +2,6 @@
   import Timeline from "$lib/components/Timeline/index.svelte";
   import Window from "$lib/components/Window.svelte";
   export let work;
-
-  console.log(work);
 </script>
 
 <section id="experience">
