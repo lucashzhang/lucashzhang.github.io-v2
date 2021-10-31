@@ -18,12 +18,12 @@
   $: technologies = data?.Technologies.multi_select || [];
 </script>
 
-<div class="Card">
-  <a class={`Card-Thumbnail ${direction}`} href={link} target="_blank">
+<div class={`Card ${direction}`}>
+  <a class="Card-Thumbnail" href={link} target="_blank">
     <img src={thumbnail} alt={title || ""} loading="lazy" />
   </a>
-  <div class={`Card-Content ${direction}`}>
-    <div class={`Card-Extra ${direction}`}>
+  <div class="Card-Content">
+    <div class="Card-Extra">
       {date}
     </div>
     <Window>
@@ -50,7 +50,7 @@
       </h3>
       <p>{body}</p>
     </Window>
-    <div class={`Card-Extra ${direction}`}>
+    <div class="Card-Extra">
       {#each technologies as tech (tech.id)}
         <Tag color={tech.color}>
           {tech.name}
@@ -82,21 +82,21 @@
     z-index: 99;
   }
 
-  .Card-Thumbnail.right {
+  .right > .Card-Thumbnail {
     grid-column: 8 / 21;
     margin-left: auto;
   }
 
-  .Card-Content.right {
+  .right > .Card-Content {
     grid-column: 1 / 14;
   }
 
-  .Card-Thumbnail.left {
+  .left > .Card-Thumbnail {
     grid-column: 1 / 14;
     margin-right: auto;
   }
 
-  .Card-Content.left {
+  .left > .Card-Content {
     grid-column: 8 / 21;
   }
 
@@ -137,11 +137,11 @@
     align-items: center;
   }
 
-  .Card-Extra.right {
+  .right > .Card-Content > .Card-Extra {
     justify-content: start;
   }
 
-  .Card-Extra.left {
+  .left > .Card-Content > .Card-Extra {
     justify-content: end;
   }
 </style>
