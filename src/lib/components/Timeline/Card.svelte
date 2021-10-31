@@ -7,7 +7,7 @@
   function generateDate(date) {
     if (!date) return "";
     const { start = "", end = "" } = date;
-    return start + (end ? ` > ${end}` : "");
+    return start + (end ? ` \u2192 ${end}` : "");
   }
 
   $: title = data?.Name?.title[0]?.plain_text || "";
