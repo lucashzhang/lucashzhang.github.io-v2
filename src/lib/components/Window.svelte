@@ -16,6 +16,7 @@
   .Window {
     border: 2px solid grey;
     background-color: var(--cl-background-light);
+    position: relative;
   }
 
   .Window-Bar {
@@ -45,6 +46,7 @@
 
   .Window-Content {
     padding: 0.75rem;
+    height: calc(100% - 2.5rem);
   }
 
   .primary {

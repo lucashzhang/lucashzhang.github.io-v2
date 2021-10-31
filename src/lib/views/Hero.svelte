@@ -1,7 +1,7 @@
 <script>
 </script>
 
-<div class="Hero">
+<div class="Hero" id="hero">
   <header>
     <h1>LMAO</h1>
   </header>

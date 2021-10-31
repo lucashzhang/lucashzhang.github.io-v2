@@ -2,11 +2,9 @@
   import Timeline from "$lib/components/Timeline/index.svelte";
   import Window from "$lib/components/Window.svelte";
   export let projects;
-
-  console.log(projects);
 </script>
 
-<section>
+<section id="projects">
   <div class="stable">
     <div class="stable-container">
       <Window color="primary">
