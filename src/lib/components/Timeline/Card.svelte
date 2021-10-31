@@ -26,8 +26,6 @@
   $: link = data.Link?.url || "";
   $: date = generateDate(data.Date?.date);
   $: technologies = data.Technologies?.multi_select || [];
-
-  console.log(title)
 </script>
 
 <div class={`Card ${direction}`}>
