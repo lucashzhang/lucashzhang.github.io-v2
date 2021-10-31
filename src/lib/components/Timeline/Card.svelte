@@ -1,7 +1,7 @@
 <script>
   import Window from "$lib/components/Window.svelte";
   import Tag from "$lib/components/Timeline/Tag.svelte";
-  export let data;
+  export let data = {};
   export let direction = "right";
 
   function generateDate(date) {
@@ -10,12 +10,24 @@
     return start + (end ? ` \u2192 ${end}` : "");
   }
 
-  $: title = data?.Name?.title[0]?.plain_text || "";
-  $: body = data?.Description?.rich_text[0]?.plain_text || "";
-  $: thumbnail = data?.Thumbnail?.files[0]?.file?.url || "";
-  $: link = data?.Link?.url || "";
-  $: date = generateDate(data?.Date?.date);
-  $: technologies = data?.Technologies.multi_select || [];
+  function generateTitle(name = {}, position = {}) {
+    const nameText = name.title[0]?.plain_text || "";
+    const posText = position.rich_text[0]?.plain_text || "";
+
+    if (posText.length > 0) {
+      return posText + (nameText.length > 0 ? ` @${nameText}` : "");
+    }
+    return nameText;
+  }
+
+  $: title = generateTitle(data.Name, data.Position);
+  $: body = data.Description?.rich_text[0]?.plain_text || "";
+  $: thumbnail = data.Thumbnail?.files[0]?.file?.url || "";
+  $: link = data.Link?.url || "";
+  $: date = generateDate(data.Date?.date);
+  $: technologies = data.Technologies?.multi_select || [];
+
+  console.log(title)
 </script>
 
 <div class={`Card ${direction}`}>
