@@ -141,6 +141,7 @@
     transition: all 0.25s;
     opacity: 0;
     border-radius: 2px;
+    pointer-events: none;
   }
 
   nav a:hover .tooltip {
