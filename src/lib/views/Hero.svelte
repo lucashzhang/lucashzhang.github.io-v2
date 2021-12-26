@@ -1,7 +1,9 @@
 <script>
+  import Desktop from '$lib/components/Desktop.svelte'
 </script>
 
 <div class="Hero" id="hero">
+  <Desktop />
   <header>
     <h1>LMAO</h1>
   </header>
