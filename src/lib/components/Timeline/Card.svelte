@@ -6,7 +6,8 @@
 
   function generateDate(date) {
     if (!date) return "";
-    const { start = "", end = "" } = date;
+    const start = date.start ? new Date(date.start).toLocaleDateString() : "";
+    const end = date.end ? new Date(date.end).toLocaleDateString() : "";
     return start + (end ? ` \u2192 ${end}` : "");
   }
 
@@ -36,7 +37,7 @@
     <div class="Card-Extra">
       {date}
     </div>
-    <Window>
+    <Window color="primary">
       <h3>
         {title}
 
@@ -112,7 +113,7 @@
 
   .Card-Link {
     height: 100%;
-    color: var(--cl-primary);
+    color: var(--cl-secondary);
   }
 
   .Card-Link svg {
