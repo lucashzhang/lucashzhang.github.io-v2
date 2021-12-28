@@ -14,14 +14,14 @@
 
 <style>
   .Window {
-    border: 2px solid grey;
+    border: 2px solid lightgray;
     background-color: var(--cl-background-light);
     position: relative;
   }
 
   .Window-Bar {
     height: 1rem;
-    border-bottom: 2px solid grey;
+    border-bottom: 2px solid lightgray;
     display: flex;
     align-items: center;
   }
@@ -29,7 +29,7 @@
   .Window-Dot {
     height: 0.5rem;
     width: 0.5rem;
-    border: 2px solid grey;
+    border: 2px solid lightgray;
     border-radius: 200%;
     margin: 0 2px;
   }

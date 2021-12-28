@@ -67,4 +67,8 @@
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
   }
+
+  hr {
+    width: 100%
+  }
 </style>

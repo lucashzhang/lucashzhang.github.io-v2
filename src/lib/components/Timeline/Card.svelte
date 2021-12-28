@@ -6,18 +6,16 @@
 
   function generateDate(date) {
     if (!date) return "";
-    const { start = "", end = "" } = date;
-    return start + (end ? ` \u2192 ${end}` : "");
+    const start = date.start ? new Date(date.start).toLocaleDateString() : "";
+    const end = date.end ? new Date(date.end).toLocaleDateString() : "";
+    return `${start} \u2192 ${end || "Present"}`;
   }
 
   function generateTitle(name = {}, position = {}) {
     const nameText = name.title[0]?.plain_text || "";
     const posText = position.rich_text[0]?.plain_text || "";
 
-    if (posText.length > 0) {
-      return posText + (nameText.length > 0 ? ` @${nameText}` : "");
-    }
-    return nameText;
+    return posText ? posText + (nameText && ` @${nameText}`) : nameText;
   }
 
   $: title = generateTitle(data.Name, data.Position);
@@ -36,7 +34,7 @@
     <div class="Card-Extra">
       {date}
     </div>
-    <Window>
+    <Window color="primary">
       <h3>
         {title}
 
@@ -112,7 +110,7 @@
 
   .Card-Link {
     height: 100%;
-    color: var(--cl-primary);
+    color: var(--cl-secondary);
   }
 
   .Card-Link svg {
