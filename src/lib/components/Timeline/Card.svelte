@@ -8,17 +8,14 @@
     if (!date) return "";
     const start = date.start ? new Date(date.start).toLocaleDateString() : "";
     const end = date.end ? new Date(date.end).toLocaleDateString() : "";
-    return start + (end ? ` \u2192 ${end}` : "");
+    return `${start} \u2192 ${end || "Present"}`;
   }
 
   function generateTitle(name = {}, position = {}) {
     const nameText = name.title[0]?.plain_text || "";
     const posText = position.rich_text[0]?.plain_text || "";
 
-    if (posText.length > 0) {
-      return posText + (nameText.length > 0 ? ` @${nameText}` : "");
-    }
-    return nameText;
+    return posText ? posText + (nameText && ` @${nameText}`) : nameText;
   }
 
   $: title = generateTitle(data.Name, data.Position);
