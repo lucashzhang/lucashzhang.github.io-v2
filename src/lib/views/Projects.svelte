@@ -11,7 +11,9 @@
         <h1>My Projects</h1>
         <hr />
         <p>
-          Lorem Ipsum
+          Here are some examples of the projects that I've worked on in the past
+          few years. They include many applications and projects that I developed on my own
+          time as well as some assignments that I feel particularly proud of.
         </p>
       </Window>
     </div>
