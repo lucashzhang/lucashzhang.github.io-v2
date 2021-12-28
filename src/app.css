@@ -67,6 +67,10 @@ img {
   border-radius: 4px;
 }
 
+hr {
+  color: lightgray
+}
+
 .Button {
   background-color: var(--cl-secondary);
   color: var(--cl-text);
