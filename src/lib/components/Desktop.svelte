@@ -113,11 +113,11 @@
 
 <style>
   .desktop {
-    z-index: 1000;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     width: fit-content;
+    /* This it the height of the hero section of the page */
     height: calc(100vh - 3rem);
     position: absolute;
     top: 0;

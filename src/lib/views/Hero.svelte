@@ -5,7 +5,8 @@
 <div class="Hero" id="hero">
   <Desktop />
   <header>
-    <h1>LMAO</h1>
+    <h1>Hello, I'm Lucas Zhang.</h1>
+    <h1>Welcome to my Website!</h1>
   </header>
 </div>
 
@@ -13,12 +14,19 @@
   .Hero {
     text-align: center;
     height: calc(100vh - 3rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  header {
+    position: relative;
+    max-width: 1000px;
+    padding-bottom: 3rem;
   }
 
   h1 {
     color: var(--cl-text);
-    text-transform: uppercase;
     font-size: 4em;
-    font-weight: 100;
   }
 </style>
