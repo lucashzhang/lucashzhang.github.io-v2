@@ -11,3 +11,17 @@
   <slot />
 </main>
 <Footer />
+<img id="website3d" src="static/Website3d.png" alt="">
+
+<style>
+  #website3d {
+    position: fixed;
+    right: -100px;
+    top: 100px;
+    z-index: -1;
+    height: 100vh;
+    transform: rotateZ(5deg);
+    opacity: 0.7;
+    filter: blur(1px);
+  }
+</style>
