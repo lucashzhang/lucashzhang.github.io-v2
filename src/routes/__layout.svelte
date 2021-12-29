@@ -16,7 +16,7 @@
 <style>
   #website3d {
     position: fixed;
-    right: -100px;
+    right: -160px;
     top: 100px;
     z-index: -1;
     height: 100vh;
