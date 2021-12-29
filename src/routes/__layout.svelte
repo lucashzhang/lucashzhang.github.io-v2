@@ -17,10 +17,10 @@
   #website3d {
     position: fixed;
     right: -160px;
-    top: 100px;
+    top: 30vh;
     z-index: -1;
     height: 100vh;
-    transform: rotateZ(5deg);
+    transform: rotateZ(10deg);
     opacity: 0.7;
     filter: blur(2px);
   }
