@@ -19,7 +19,7 @@
     right: -160px;
     top: 30vh;
     z-index: -1;
-    height: 100vh;
+    height: 80vh;
     transform: rotateZ(10deg);
     opacity: 0.7;
     filter: blur(2px);
