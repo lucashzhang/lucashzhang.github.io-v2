@@ -133,7 +133,7 @@
   nav a .tooltip {
     position: absolute;
     color: var(--cl-text);
-    top: -1.75rem;
+    top: -2rem;
     background-color: var(--cl-primary);
     padding: 2px 4px;
     font-size: small;
@@ -141,10 +141,11 @@
     transition: all 0.25s;
     opacity: 0;
     border-radius: 2px;
+    pointer-events: none;
   }
 
   nav a:hover .tooltip {
-    top: -2rem;
+    top: -2.5rem;
     opacity: 1;
   }
 

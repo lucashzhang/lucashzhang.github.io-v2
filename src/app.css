@@ -13,7 +13,6 @@ body {
   margin: 0;
   padding: 0;
   background-color: var(--cl-background);
-  /* background-image: url("/background.svg"); */
   background-attachment: fixed;
   background-size: cover;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -34,14 +33,8 @@ main {
 }
 
 main {
-  background-color: rgba(20, 20, 20, 0.1);
+  background-color: var(--cl-background);
   border-bottom: 2px solid var(--cl-primary);
-}
-
-main {
-  -webkit-backdrop-filter: blur(2px);
-  backdrop-filter: blur(2px);
-  background-color: none;  
 }
 
 h1,

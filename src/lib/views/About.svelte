@@ -49,6 +49,10 @@
     width: 48rem;
   }
 
+  hr {
+    width: 100%;
+  }
+
   .About-Content {
     height: 100%;
     display: flex;
