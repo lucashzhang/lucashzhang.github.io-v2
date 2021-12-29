@@ -11,7 +11,7 @@
   <slot />
 </main>
 <Footer />
-<img id="website3d" src="static/Website3d.png" alt="">
+<img id="website3d" src="/Website3d.png" alt="">
 
 <style>
   #website3d {
