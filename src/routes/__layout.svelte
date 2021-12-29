@@ -22,6 +22,6 @@
     height: 100vh;
     transform: rotateZ(5deg);
     opacity: 0.7;
-    filter: blur(1px);
+    filter: blur(2px);
   }
 </style>
