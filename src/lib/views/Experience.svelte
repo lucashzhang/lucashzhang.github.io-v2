@@ -36,7 +36,7 @@
     position: sticky;
     top: 0px;
     max-height: 100vh;
-    width: 50%;
+    width: 40%;
     display: flex;
     align-items: center;
     padding: 1rem;
@@ -49,7 +49,7 @@
 
   .scrollable {
     z-index: 100;
-    width: 50%;
+    width: 60%;
     padding: 1rem;
   }
 </style>
