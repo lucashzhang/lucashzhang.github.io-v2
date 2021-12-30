@@ -1,20 +1,21 @@
 :root {
   --cl-primary: #2A529F;
-  --cl-secondary: #da4c98;
+  --cl-secondary: #a81f68;
   --cl-background: #070E20;
   /* --cl-background-light: #353946; */
   --cl-background-light: #091E53;
   --cl-text: white;
   scroll-behavior: smooth;
+  background: linear-gradient(145deg, var(--cl-background),  var(--cl-background-light), var(--cl-secondary)) fixed;
 }
 
 body {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  background-color: var(--cl-background);
-  background-attachment: fixed;
+  margin: 0px;
+  padding: 0px;
+  background: fixed no-repeat url('/WebsiteBackground3.svg');
   background-size: cover;
+  background-position: center;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
@@ -24,12 +25,6 @@ body {
 
 section {
   padding: 1rem max(calc(50vw - 800px), 2rem);
-}
-
-main {
-  backdrop-filter: blur(2px);
-  border-bottom: 2px solid var(--cl-primary);
-  position: relative;
 }
 
 main {
