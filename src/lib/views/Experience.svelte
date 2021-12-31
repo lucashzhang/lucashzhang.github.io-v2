@@ -56,6 +56,7 @@
   @media only screen and (max-width: 992px) {
     section {
       flex-direction: column;
+      gap: 2rem;
     }
 
     .stable {

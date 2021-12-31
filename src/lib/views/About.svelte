@@ -38,7 +38,7 @@
     justify-content: center;
     padding-top: 3rem;
     height: 100%;
-    gap: 3rem;
+    gap: 2rem;
   }
 
   img {

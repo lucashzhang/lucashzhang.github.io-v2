@@ -24,7 +24,7 @@ body {
 }
 
 section {
-  padding: 1rem max(calc(50vw - 800px), 2rem);
+  padding: 2rem max(calc(50vw - 800px), 2rem);
 }
 
 main {

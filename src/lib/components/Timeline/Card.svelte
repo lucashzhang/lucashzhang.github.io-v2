@@ -154,14 +154,10 @@
   }
 
   @media only screen and (max-width: 992px) {
-    
 
-    img {
-      width: 100%;
-      height: auto;
-    }
     .Card {
       height: 100%;
+      width: 100%;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -179,6 +175,16 @@
 
     p {
       display: none;
+    }
+
+    .Card-Thumbnail {
+      width: 100%;
+      /* height: auto; */
+    }
+
+    img {
+      width: 100%;
+      height: auto;
     }
   }
 </style>
