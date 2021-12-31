@@ -48,6 +48,7 @@
     section {
       flex-direction: column;
       gap: 2rem;
+      padding-top: 1rem;
     }
 
     .stable {
