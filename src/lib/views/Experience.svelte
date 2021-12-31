@@ -30,6 +30,7 @@
   section {
     display: flex;
     flex-direction: row;
+    gap: 6rem;
   }
 
   .stable {
@@ -39,21 +40,15 @@
     width: 45%;
     display: flex;
     align-items: center;
-    padding: 1rem;
     z-index: 10;
-  }
-
-  .stable-container {
-    width: 80%;
   }
 
   .scrollable {
     z-index: 100;
     width: 55%;
-    padding: 1rem;
   }
 
-  @media only screen and (max-width: 992px) {
+  @media only screen and (max-width: 1200px) {
     section {
       flex-direction: column;
       gap: 2rem;
@@ -63,10 +58,6 @@
       position: inherit;
       width: 100%;
       padding: 0;
-    }
-
-    .stable-container {
-      width: 100%;
     }
 
     .scrollable {

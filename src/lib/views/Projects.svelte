@@ -6,17 +6,16 @@
 
 <section id="projects">
   <div class="stable">
-    <div class="stable-container">
-      <Window color="primary">
-        <h1>My Projects</h1>
-        <hr />
-        <p>
-          Here are some examples of the projects that I've worked on in the past
-          few years. They include many applications and projects that I developed on my own
-          time as well as some assignments that I feel particularly proud of.
-        </p>
-      </Window>
-    </div>
+    <Window color="primary">
+      <h1>My Projects</h1>
+      <hr />
+      <p>
+        Here are some examples of the projects that I've worked on in the past
+        few years. They include many applications and projects that I developed
+        on my own time as well as some assignments that I feel particularly
+        proud of.
+      </p>
+    </Window>
   </div>
   <div class="scrollable">
     <Timeline items={projects} direction="left" />
@@ -27,6 +26,7 @@
   section {
     display: flex;
     flex-direction: row-reverse;
+    gap: 6rem;
   }
 
   .stable {
@@ -36,22 +36,15 @@
     width: 45%;
     display: flex;
     align-items: center;
-    padding: 1rem;
     z-index: 10;
-  }
-
-  .stable-container {
-    width: 80%;
-    margin-left: auto;
   }
 
   .scrollable {
     z-index: 100;
     width: 55%;
-    padding: 1rem;
   }
 
-  @media only screen and (max-width: 992px) {
+  @media only screen and (max-width: 1200px) {
     section {
       flex-direction: column;
       gap: 2rem;
@@ -63,14 +56,9 @@
       padding: 0;
     }
 
-    .stable-container {
-      width: 100%;
-    }
-
     .scrollable {
       width: 100%;
-      padding: 0
+      padding: 0;
     }
-
   }
 </style>
