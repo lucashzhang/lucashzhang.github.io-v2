@@ -71,3 +71,23 @@ hr {
 .Button:hover {
   opacity: 0.8;
 }
+
+/* Stuff for the icon backgrounds */
+
+.stable-container {
+  display: grid;
+  grid-template-columns: 1.5rem 1fr 1.5rem;
+}
+
+.stable-container > svg {
+  grid-column: 2;
+  grid-row: 1;
+  color: var(--cl-secondary);
+}
+
+.stable-container > .Window {
+  grid-column: 1 / 4;
+  grid-row: 1;
+  height: fit-content;
+  margin: auto;
+}

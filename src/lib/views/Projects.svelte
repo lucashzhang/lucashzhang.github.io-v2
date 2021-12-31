@@ -6,16 +6,32 @@
 
 <section id="projects">
   <div class="stable">
-    <Window color="primary">
-      <h1>My Projects</h1>
-      <hr />
-      <p>
-        Here are some examples of the projects that I've worked on in the past
-        few years. They include many applications and projects that I developed
-        on my own time as well as some assignments that I feel particularly
-        proud of.
-      </p>
-    </Window>
+    <div class="stable-container">
+      <Window color="primary">
+        <h1>My Projects</h1>
+        <hr />
+        <p>
+          Here are some examples of the projects that I've worked on in the past
+          few years. They include many applications and projects that I
+          developed on my own time as well as some assignments that I feel
+          particularly proud of.
+        </p>
+      </Window>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="h-6 w-6"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="1.5"
+          d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"
+        />
+      </svg>
+    </div>
   </div>
   <div class="scrollable">
     <Timeline items={projects} direction="left" />
@@ -60,6 +76,10 @@
     .scrollable {
       width: 100%;
       padding: 0;
+    }
+
+    .stable-container > svg {
+      display: none;
     }
   }
 </style>
