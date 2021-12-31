@@ -2,8 +2,7 @@
   --cl-primary: #2A529F;
   --cl-secondary: #bd1d72;
   --cl-background: #070E20;
-  /* --cl-background-light: #353946; */
-  --cl-background-light: #091E53;
+  --cl-background-light: rgba(9, 30, 83, 0.88);
   --cl-text: white;
   scroll-behavior: smooth;
 }
@@ -96,4 +95,8 @@ hr {
   .stable-container > svg {
     display: none;
   }
+
+  /* :root {
+    --cl-background-light: #091E53
+  } */
 }

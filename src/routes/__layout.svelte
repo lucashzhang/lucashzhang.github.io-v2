@@ -5,6 +5,10 @@
   import Footer from "$lib/views/Footer.svelte";
 </script>
 
+<svelte:head>
+  <title>Lucas Zhang</title>
+</svelte:head>
+
 <Hero />
 <Nav />
 <main>
