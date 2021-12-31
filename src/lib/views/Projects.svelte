@@ -77,9 +77,5 @@
       width: 100%;
       padding: 0;
     }
-
-    .stable-container > svg {
-      display: none;
-    }
   }
 </style>

@@ -91,3 +91,9 @@ hr {
   height: fit-content;
   margin: auto;
 }
+
+@media only screen and (max-width: 1200px) {
+  .stable-container > svg {
+    display: none;
+  }
+}
