@@ -38,15 +38,11 @@
     justify-content: center;
     padding-top: 3rem;
     height: 100%;
+    gap: 3rem;
   }
 
   img {
     width: 20rem;
-    margin-right: 3rem;
-  }
-
-  p {
-    width: 48rem;
   }
 
   hr {
@@ -66,9 +62,22 @@
 
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
+    padding-top: 2rem;
   }
 
   hr {
     width: 100%
+  }
+
+  @media only screen and (max-width: 992px) {
+    section {
+      flex-direction: column;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+
   }
 </style>

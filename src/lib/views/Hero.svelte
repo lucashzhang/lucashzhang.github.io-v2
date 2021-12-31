@@ -1,5 +1,5 @@
 <script>
-  import Desktop from '$lib/components/Desktop.svelte'
+  import Desktop from "$lib/components/Desktop.svelte";
 </script>
 
 <div class="Hero" id="hero">
@@ -28,5 +28,6 @@
   h1 {
     color: var(--cl-text);
     font-size: 4em;
+    padding: 0.5rem 1rem;
   }
 </style>

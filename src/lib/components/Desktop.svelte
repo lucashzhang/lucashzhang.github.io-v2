@@ -154,4 +154,10 @@
   .desktop a:hover {
     background-color: rgba(100, 100, 100, 0.25);
   }
+
+  @media only screen and (max-width: 992px) {
+    .desktop {
+      display: none;
+    }
+  }
 </style>
