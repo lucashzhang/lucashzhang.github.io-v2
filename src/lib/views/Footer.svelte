@@ -86,7 +86,7 @@
   }
 
   .Footer-Content {
-    padding: 1rem;
+    padding: 2rem 1rem;
     display: flex;
     flex-wrap: wrap;
     gap: 3rem;
@@ -121,7 +121,7 @@
   }
 
   p {
-    margin-top: 2rem;
+    margin-top: 1rem;
     font-size: small;
   }
 </style>
