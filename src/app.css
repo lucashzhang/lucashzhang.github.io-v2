@@ -1,19 +1,18 @@
 :root {
   --cl-primary: #2A529F;
-  --cl-secondary: #a81f68;
+  --cl-secondary: #bd1d72;
   --cl-background: #070E20;
   /* --cl-background-light: #353946; */
   --cl-background-light: #091E53;
   --cl-text: white;
   scroll-behavior: smooth;
-  background: linear-gradient(145deg, var(--cl-background),  var(--cl-background-light), var(--cl-secondary)) fixed;
 }
 
 body {
   box-sizing: border-box;
   margin: 0px;
   padding: 0px;
-  background: fixed no-repeat url('/WebsiteBackground3.svg');
+  background: fixed no-repeat url('/WebsiteBackground3.svg'), fixed linear-gradient(145deg, var(--cl-background),  var(--cl-background-light), var(--cl-secondary));
   background-size: cover;
   background-position: center;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -24,7 +23,7 @@ body {
 }
 
 section {
-  padding: 1rem max(calc(50vw - 800px), 2rem);
+  padding: 2rem max(calc(50vw - 800px), 2rem);
 }
 
 main {
@@ -71,4 +70,30 @@ hr {
 
 .Button:hover {
   opacity: 0.8;
+}
+
+/* Stuff for the icon backgrounds */
+
+.stable-container {
+  display: grid;
+  grid-template-columns: 1.5rem 1fr 1.5rem;
+}
+
+.stable-container > svg {
+  grid-column: 2;
+  grid-row: 1;
+  color: var(--cl-secondary);
+}
+
+.stable-container > .Window {
+  grid-column: 1 / 4;
+  grid-row: 1;
+  height: fit-content;
+  margin: auto;
+}
+
+@media only screen and (max-width: 1200px) {
+  .stable-container > svg {
+    display: none;
+  }
 }

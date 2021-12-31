@@ -72,7 +72,7 @@
   .Card {
     position: relative;
     display: grid;
-    grid-template-columns: repeat(20, 1fr);
+    grid-template-columns: 1fr 6em 1fr;
     grid-template-rows: 1fr;
     align-items: center;
     height: 18rem;
@@ -91,21 +91,20 @@
   }
 
   .right > .Card-Thumbnail {
-    grid-column: 8 / 21;
+    grid-column: 2 / 4;
     margin-left: auto;
   }
 
   .right > .Card-Content {
-    grid-column: 1 / 14;
+    grid-column: 1 / 3;
   }
 
   .left > .Card-Thumbnail {
-    grid-column: 1 / 14;
-    margin-right: auto;
+    grid-column: 1 / 3;
   }
 
   .left > .Card-Content {
-    grid-column: 8 / 21;
+    grid-column: 2 / 4;
   }
 
   .Card-Link {
@@ -119,7 +118,7 @@
 
   img {
     object-fit: cover;
-    object-position: center;
+    object-position: left;
     height: 16rem;
     aspect-ratio: 16 / 9;
   }
@@ -151,5 +150,39 @@
 
   .left > .Card-Content > .Card-Extra {
     justify-content: end;
+  }
+
+  @media only screen and (max-width: 768px) {
+
+    .Card {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .Card-Content {
+      position: relative;
+      top: -2rem;
+      width: calc(100% - 2rem)
+    }
+
+    .Card-Extra {
+      display: none;
+    }
+
+    p {
+      display: none;
+    }
+
+    .Card-Thumbnail {
+      width: 100%;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+    }
   }
 </style>
