@@ -36,7 +36,7 @@
     position: sticky;
     top: 0px;
     max-height: 100vh;
-    width: 40%;
+    width: 45%;
     display: flex;
     align-items: center;
     padding: 1rem;
@@ -49,7 +49,29 @@
 
   .scrollable {
     z-index: 100;
-    width: 60%;
+    width: 55%;
     padding: 1rem;
+  }
+
+  @media only screen and (max-width: 992px) {
+    section {
+      flex-direction: column;
+    }
+
+    .stable {
+      position: inherit;
+      width: 100%;
+      padding: 0;
+    }
+
+    .stable-container {
+      width: 100%;
+    }
+
+    .scrollable {
+      width: 100%;
+      padding: 0
+    }
+
   }
 </style>
