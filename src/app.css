@@ -6,14 +6,13 @@
   --cl-background-light: #091E53;
   --cl-text: white;
   scroll-behavior: smooth;
-  background: linear-gradient(145deg, var(--cl-background),  var(--cl-background-light), var(--cl-secondary)) fixed;
 }
 
 body {
   box-sizing: border-box;
   margin: 0px;
   padding: 0px;
-  background: fixed no-repeat url('/WebsiteBackground3.svg');
+  background: fixed no-repeat url('/WebsiteBackground3.svg'), fixed linear-gradient(145deg, var(--cl-background),  var(--cl-background-light), var(--cl-secondary));
   background-size: cover;
   background-position: center;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
