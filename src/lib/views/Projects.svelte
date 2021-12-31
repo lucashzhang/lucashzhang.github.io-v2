@@ -14,7 +14,8 @@
           Here are some examples of the projects that I've worked on in the past
           few years. They include many applications and projects that I
           developed on my own time as well as some assignments that I feel
-          particularly proud of.
+          particularly proud of. <br /> See more in my
+          <a href="https://github.com/lucashzhang" target="_blank">Github</a>.
         </p>
       </Window>
       <svg
@@ -58,6 +59,10 @@
   .scrollable {
     z-index: 100;
     width: 55%;
+  }
+
+  p > a {
+    color: var(--cl-secondary);
   }
 
   @media only screen and (max-width: 1200px) {
