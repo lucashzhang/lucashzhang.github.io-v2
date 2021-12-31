@@ -68,7 +68,7 @@
       </a>
     </div>
     <p>
-      Copyright © 2022 Lucas Zhang. All Rights Reserved
+      Copyright © {new Date().getFullYear()} Lucas Zhang. All Rights Reserved
     </p>
 </footer>
 
