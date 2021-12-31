@@ -6,20 +6,18 @@
 
 <section id="experience">
   <div class="stable">
-    <div class="stable-container">
-      <Window color="primary">
-        <h1>My Experiences</h1>
-        <hr />
-        <p>
-          Right now, I'm a computer science major at UNC Chapel Hill. But
-          outside of schoolwork, I spend much of my time interning at places
-          like SAS and Duke University. I also taking an active role in my
-          Computer Science Department by doing things such as Directing the
-          Carolina Data Challenge Hackathon and serving on the development team
-          of Computer Science for Social Good.
-        </p>
-      </Window>
-    </div>
+    <Window color="primary">
+      <h1>My Experiences</h1>
+      <hr />
+      <p>
+        Right now, I'm a computer science major at UNC Chapel Hill. But outside
+        of schoolwork, I spend much of my time interning at places like SAS and
+        Duke University. I also taking an active role in my Computer Science
+        Department by doing things such as Directing the Carolina Data Challenge
+        Hackathon and serving on the development team of Computer Science for
+        Social Good.
+      </p>
+    </Window>
   </div>
   <div class="scrollable">
     <Timeline items={work} />
@@ -62,8 +60,7 @@
 
     .scrollable {
       width: 100%;
-      padding: 0
+      padding: 0;
     }
-
   }
 </style>
