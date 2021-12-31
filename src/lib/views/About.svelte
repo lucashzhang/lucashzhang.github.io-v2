@@ -38,7 +38,7 @@
     justify-content: center;
     padding-top: 3rem;
     height: 100%;
-    gap: 6rem;
+    gap: 4rem;
   }
 
   img {
@@ -69,7 +69,7 @@
     width: 100%
   }
 
-  @media only screen and (max-width: 992px) {
+  @media only screen and (max-width: 768px) {
     section {
       flex-direction: column;
       gap: 2rem;
