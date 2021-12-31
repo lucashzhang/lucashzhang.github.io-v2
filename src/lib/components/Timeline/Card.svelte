@@ -72,7 +72,7 @@
   .Card {
     position: relative;
     display: grid;
-    grid-template-columns: repeat(16, 1fr);
+    grid-template-columns: 1fr 6em 1fr;
     grid-template-rows: 1fr;
     align-items: center;
     height: 18rem;
@@ -91,21 +91,20 @@
   }
 
   .right > .Card-Thumbnail {
-    grid-column: 7 / 17;
+    grid-column: 2 / 4;
     margin-left: auto;
   }
 
   .right > .Card-Content {
-    grid-column: 1 / 10;
+    grid-column: 1 / 3;
   }
 
   .left > .Card-Thumbnail {
-    grid-column: 1 / 9;
-    margin-right: auto;
+    grid-column: 1 / 3;
   }
 
   .left > .Card-Content {
-    grid-column: 8 / 17;
+    grid-column: 2 / 4;
   }
 
   .Card-Link {
@@ -153,7 +152,7 @@
     justify-content: end;
   }
 
-  @media only screen and (max-width: 992px) {
+  @media only screen and (max-width: 768px) {
 
     .Card {
       height: 100%;
@@ -179,7 +178,6 @@
 
     .Card-Thumbnail {
       width: 100%;
-      /* height: auto; */
     }
 
     img {
