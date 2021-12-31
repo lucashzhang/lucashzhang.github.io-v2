@@ -5,6 +5,6 @@
 
 <style>
   footer {
-    height: 240px;
+    height: 20rem;
   }
 </style>
