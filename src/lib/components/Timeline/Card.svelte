@@ -122,6 +122,7 @@
     object-position: left;
     height: 16rem;
     aspect-ratio: 16 / 9;
+    max-width: 100%;
   }
 
   .Card-Thumbnail:hover + .Card-Content {
