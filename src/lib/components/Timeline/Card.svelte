@@ -6,8 +6,9 @@
 
   function generateDate(date) {
     if (!date) return "";
-    const start = date.start ? new Date(date.start).toLocaleDateString() : "";
-    const end = date.end ? new Date(date.end).toLocaleDateString() : "";
+    const start = date.start && new Date(date.start).toLocaleString('default', { month: 'short', year: 'numeric' });
+    const end = date.end && new Date(date.end).toLocaleString('default', { month: 'short', year: 'numeric' });
+
     return `${start} \u2192 ${end || "Present"}`;
   }
 
