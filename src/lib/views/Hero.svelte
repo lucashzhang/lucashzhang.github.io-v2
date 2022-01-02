@@ -6,7 +6,7 @@
   <Desktop />
   <header>
     <h1>Hello, I'm Lucas Zhang.</h1>
-    <h1>Welcome to my Website!</h1>
+    <h1>Welcome to my website!</h1>
   </header>
 </div>
 
