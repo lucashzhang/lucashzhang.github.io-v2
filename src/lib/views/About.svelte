@@ -9,11 +9,8 @@
       <h1>About Me</h1>
       <hr />
       <p>
-        Hello! My name is Lucas Zhang. I'm a creative and analytical software
-        developer who also happens to love making things look pretty. I've been
-        interning, teaching, taking classes, and building all sorts of projects,
-        hoping to gain more practical experience in my field as well as explore
-        any new ones.
+        Hello! My name is Lucas Zhang. I'm a currently a senior at UNC Chapel Hill with Computer Science Major and a Data Science Minor.
+        This website is both my resume and my sandbox where I can explore new technologies that I find fun or interesting.
       </p>
       <div class="Button-Group">
         <a
